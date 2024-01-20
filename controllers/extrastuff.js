@@ -10,13 +10,13 @@ const sendVerificationEmail = (email, subject, text) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'abdullahansari.eb19102002@gmail.com',
-            pass: 'rryhmqmmplntumym',
+            user: 'your_email',
+            pass: 'your_password',
         },
     });
 
     const mailOptions = {
-        from: 'abdullahansari.eb19102002@gmail.com',
+        from: 'your_email',
         to: email,
         subject: subject,
         html: `<h1>Email Verification</h1>
